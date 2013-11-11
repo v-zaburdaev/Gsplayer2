@@ -1,0 +1,55 @@
+; GPlayer for Pocket PC AppInstall CabWiz INF file
+; Copyright(C) 2004 Y.Nagamidori
+
+[Version]
+Signature   = "$Windows NT$"
+Provider    = "GreenSoftware"
+CESignature = "$Windows CE$"
+
+;Install Path Macro String for Palm-size PC
+;%CE1% \Program Files 
+;%CE2% \Windows 
+;%CE4% \Windows\StartUp 
+;%CE5% \My Documents 
+;%CE6% \Program Files\Accessories 
+;%CE7% \Program Files\Communication 
+;%CE8% \Program Files\Games 
+;%CE11% \Windows\Start Menu\Programs 
+;%CE12% \Windows\Start Menu\Programs\Accessories 
+;%CE13% \Windows\Start Menu\Programs\Communications 
+;%CE14% \Windows\Start Menu\Programs\Games 
+;%CE15% \Windows\Fonts 
+;%CE17% \Windows\Start Menu 
+
+[CEStrings]
+AppName     = "GSPlayer"
+InstallDir  = %CE1%\GreenSoftware
+
+[CEDevice.WM5]                             ; Pocket PC on ARM
+ProcessorType           = 2577
+UnsupportedPlatforms    = "HPC","Jupiter","PPC"
+
+[SourceDisksNames.WM5]
+1 = ,"ARM",,ARMV4Rel
+
+[SourceDisksFiles.WM5]
+GSPlayer2.exe = 1
+GSPlayer2.exe.0411.mui = 1
+gsgetfile.dll = 1
+
+[DefaultInstall]
+CopyFiles   = CopyToInstallDir
+CEShortcuts = CreateShortcuts
+
+[DestinationDirs]
+CopyToInstallDir = ,%InstallDir%
+DefaultDestDir   = ,%InstallDir%
+
+
+[CopyToInstallDir]
+GSPlayer2.exe, GSPlayer2.exe,,0x40000000
+GSPlayer2.exe.0411.mui, GSPlayer2.exe.0411.mui,,0x40000000
+gsgetfile.dll, gsgetfile.dll,,0x40000000
+
+[CreateShortcuts]
+GSPlayer,0,GSPlayer2.exe,%CE11%

@@ -1,0 +1,338 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "newres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ニュートラル resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(932)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_OPENFILEDLG_MEDIUM, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 175
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_OPENFILEDLG_SMALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 130
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_OPENFILEDLG_PPC, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 135
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_OPENFILEDLG_LARGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 249
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_NEWFOLDERDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 33
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OPENFILEDLG_MEDIUM DIALOG  0, 0, 179, 133
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP
+BEGIN
+    CONTROL         "List1",IDC_LIST_FILE,"SysListView32",LVS_LIST | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | WS_BORDER | WS_TABSTOP,4,33,171,64
+    LTEXT           "",IDC_STATIC_CURRENT_TEXT,4,21,166,10
+    LTEXT           "",IDC_STATIC_NAME,4,103,29,8
+    EDITTEXT        IDC_EDIT_NAME,37,100,138,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_TYPE,4,118,29,8
+    COMBOBOX        IDC_COMBO_FILTER,37,116,138,139,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_OPENFILEDLG_SMALL DIALOG  0, 0, 134, 147
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP
+BEGIN
+    CONTROL         "List1",IDC_LIST_FILE,"SysListView32",LVS_LIST | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | WS_BORDER | WS_TABSTOP,4,33,126,73
+    LTEXT           "",IDC_STATIC_CURRENT_TEXT,4,21,126,10
+    LTEXT           "",IDC_STATIC_NAME,4,112,29,8
+    EDITTEXT        IDC_EDIT_NAME,37,110,93,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_TYPE,4,131,29,8
+    COMBOBOX        IDC_COMBO_FILTER,37,127,93,139,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_OPENFILEDLG_PPC DIALOG  0, 0, 138, 179
+STYLE WS_POPUP | WS_CAPTION
+EXSTYLE 0x80000000L
+BEGIN
+    LTEXT           "",IDC_TITLE,3,2,89,8
+    PUSHBUTTON      "",IDCANCEL,95,2,40,11
+    RTEXT           "",IDC_STATIC_NAME,2,16,25,8
+    EDITTEXT        IDC_EDIT_NAME,28,16,107,12,ES_AUTOHSCROLL
+    RTEXT           "",IDC_STATIC_TYPE,2,30,25,8
+    COMBOBOX        IDC_COMBO_FILTER,28,30,107,139,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "",IDC_STATIC_CURRENT_TEXT,3,43,132,8
+    CONTROL         "List1",IDC_LIST_FILE,"SysListView32",LVS_LIST | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | WS_BORDER | WS_TABSTOP,0,51,135,127
+    CONTROL         "",IDC_STATIC,"SIPPREF",NOT WS_VISIBLE,0,0,0,0
+    LTEXT           "",IDC_STATIC,-1,-1,279,15,WS_BORDER
+END
+
+IDD_OPENFILEDLG_LARGE DIALOG  0, 0, 253, 128
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP
+BEGIN
+    CONTROL         "List1",IDC_LIST_FILE,"SysListView32",LVS_LIST | LVS_SHOWSELALWAYS | LVS_SHAREIMAGELISTS | WS_BORDER | WS_TABSTOP,4,33,245,73
+    LTEXT           "",IDC_STATIC_CURRENT_TEXT,4,21,245,10
+    LTEXT           "",IDC_STATIC_NAME,4,112,29,8
+    EDITTEXT        IDC_EDIT_NAME,37,109,81,14,ES_AUTOHSCROLL
+    LTEXT           "",IDC_STATIC_TYPE,126,112,29,8
+    COMBOBOX        IDC_COMBO_FILTER,159,109,90,139,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_NEWFOLDERDIALOG DIALOG  0, 0, 135, 36
+STYLE DS_CENTER | WS_POPUP | WS_CAPTION
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,2,4,131,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,6,20,50,13
+    PUSHBUTTON      "",IDCANCEL,77,20,50,13
+END
+
+#endif    // ニュートラル resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""newres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,5,1
+ PRODUCTVERSION 0,0,5,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040004b0"
+        BEGIN
+            VALUE "CompanyName", "GreenSoftware"
+            VALUE "FileDescription", "gsgetfile"
+            VALUE "FileVersion", "0, 0, 5, 1"
+            VALUE "InternalName", "gsgetfile"
+            VALUE "LegalCopyright", "Copyright (C) 2002-2003 Y.Nagamidori"
+            VALUE "LegalTrademarks", "GreenSoftware"
+            VALUE "OriginalFilename", "gsgetfile.dll"
+            VALUE "ProductName", "gsgetfile"
+            VALUE "ProductVersion", "0, 0, 5, 1"
+            VALUE "SpecialBuild", "International Version by HouMing Rev.10"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x400, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_DUMMY MENU 
+BEGIN
+    POPUP "Open... "
+    BEGIN
+        MENUITEM "Dummy",                       IDM_DUMMY
+    END
+END
+
+IDR_TITLE MENU 
+BEGIN
+    MENUITEM " ",                           ID_UP_FOLDER
+    POPUP " "
+    BEGIN
+        MENUITEM " ",                           ID_NEW_FOLDER
+        MENUITEM SEPARATOR
+        MENUITEM " ",                           ID_LIST_STYLE_LIST
+        MENUITEM " ",                           ID_LIST_STYLE_REPORT
+        MENUITEM SEPARATOR
+        MENUITEM " ",                           ID_LIST_SELECTALL
+        MENUITEM "Select on Tap",               ID_KEY_CTRL
+        MENUITEM SEPARATOR
+        MENUITEM "Cancel",                      IDCANCEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RCDATA
+//
+
+IDR_DUMMY RCDATA 
+BEGIN
+    0x0066, 0x0001, 0xfffe, 0x9c44, 0x000c, 0x0018, 0x9c45, 0x0000, 0x0000
+
+END
+
+IDR_TITLE RCDATA 
+BEGIN
+    0x006b, 0x0002, 0xfffe, 0x9c41, 0x0004, 0x0010, 0x9c5e, 0x0000, 0x0000, 
+    0xfffe, 0x9c4a, 0x0004, 0x0018, 0x9c5f, 0x0000, 0x0001
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR_PPC TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_LIST_SELECTALL
+    BUTTON      ID_KEY_CTRL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR_PPC         BITMAP                  "toolbar_ppc.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_TITLE               "Open... "
+    IDS_DEF_EXT             "*.*"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_MENU_UP             "Up"
+    IDS_MENU_MENU           "Menu"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 (米国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// CEUX
+//
+
+HI_RES_AWARE CEUX 
+BEGIN
+    0x0001
+END
+
+#endif    // 英語 (米国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
